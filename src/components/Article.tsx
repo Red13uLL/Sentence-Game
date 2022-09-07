@@ -18,10 +18,10 @@ export const Article: React.FC<Props> = ({ article, removeArticle }) => {
   return (
     <div className="Article">
       <div className="Answers-field">
-        <p id="p1">{article.answer1}</p>
-        <p id="p2">{article.answer2}</p>
-        <p id="p3">{article.answer3}</p>
-        <p id="p4">{article.answer4}</p>
+        <p id="p1">
+          {article.answer1} {article.answer2} {article.answer3}{' '}
+          {article.answer4}
+        </p>
       </div>
       <button onClick={() => deleteArticle(article)}>Delete</button>
     </div>
