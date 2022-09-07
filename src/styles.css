@@ -70,28 +70,26 @@ main > h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-
+  padding: 0.4rem;
   border-radius: 10px;
 }
 
-.Article:not(:last-child) {
-  border-bottom: 2px solid #f5f6f7;
-}
+
 .Answers-field{
   position: relative;
   display: flex;
   justify-content: Center;
   padding: 1rem;
-
   border-radius: 10px;
-  width: 100%;
+  width: 80%;
   height: 20px;
 }
 
 p {
-  width: 80%;
-  height: 35px;
+  width: 60%;
+  height: 15px;
+  font-size: 2rem;
+  white-space: nowrap;
 }
 
 .Article button {
@@ -102,6 +100,7 @@ p {
   border-radius: 20px;
   cursor: pointer;
   outline: none;
+
 }
 
 .Article button:hover {
