@@ -21,28 +21,32 @@ export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
 
   return (
     <form onSubmit={addNewArticle} className="Add-article">
+      <label htmlFor="answer1">Who?</label>
       <input
         type="text"
         id="answer1"
-        placeholder="Who?"
+        placeholder="Type your answer here..."
         onChange={handleArticleData}
       />
+      <label htmlFor="answer2">What?</label>
       <input
         type="text"
         id="answer2"
-        placeholder="What?"
+        placeholder="Type your answer here..."
         onChange={handleArticleData}
       />
+      <label htmlFor="answer3">When?</label>
       <input
         type="text"
         id="answer3"
-        placeholder="When?"
+        placeholder="Type your answer here..."
         onChange={handleArticleData}
       />
+      <label htmlFor="answer1">Where?</label>
       <input
         type="text"
         id="answer4"
-        placeholder="Where?"
+        placeholder="Type your answer here..."
         onChange={handleArticleData}
       />
       <button disabled={article === undefined ? true : false}>
