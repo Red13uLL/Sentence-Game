@@ -35,7 +35,7 @@ export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
       if (article[key] === '') {
         error.push(key);
       } else if (article[key] !== '') {
-        error.filter(() => {
+        error.filter((e) => {
           error.splice(article[key]);
         });
       }

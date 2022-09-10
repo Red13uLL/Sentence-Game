@@ -21,9 +21,7 @@ const App: React.FC = () => {
   const myStyle = {
     backgroundImage:
       "url('https://img.freepik.com/premium-photo/modern-futuristic-neon-lights-old-grunge-brick-wall-room-background-3d-rendering_79443-2226.jpg?w=1480')",
-    height: '100vh',
-    maxWidth: '400%',
-    marginTop: '-60px',
+    maxWidth: '100%',
     backgroundSize: 'cover',
     color: 'white',
     backgroundRepeat: 'no-repeat',
