@@ -18,17 +18,9 @@ const App: React.FC = () => {
     (article: IArticle) => dispatch(addArticle(article)),
     [dispatch],
   );
-  const myStyle = {
-    backgroundImage:
-      "url('https://img.freepik.com/premium-photo/modern-futuristic-neon-lights-old-grunge-brick-wall-room-background-3d-rendering_79443-2226.jpg?w=1480')",
-    maxWidth: '100%',
-    backgroundSize: 'cover',
-    color: 'white',
-    backgroundRepeat: 'no-repeat',
-  };
 
   return (
-    <main style={myStyle}>
+    <main>
       <h1>Sentence game</h1>
       <AddArticle saveArticle={saveArticle} />
       {articles.map((article: IArticle) => (

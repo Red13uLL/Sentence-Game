@@ -25,21 +25,7 @@ export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
   const addNewArticle = (e: React.FormEvent) => {
     e.preventDefault();
 
-    checkInputs(article);
-
     saveArticle(article);
-  };
-
-  const checkInputs = (article: any) => {
-    for (let key in article) {
-      if (article[key] === '') {
-        error.push(key);
-      } else if (article[key] !== '') {
-        error.filter((e) => {
-          error.splice(article[key]);
-        });
-      }
-    }
   };
 
   return (

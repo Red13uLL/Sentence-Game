@@ -16,9 +16,11 @@
     "react-responsive": "^9.0.0-beta.10",
     "react-scripts": "5.0.1",
     "redux-form": "^8.3.8",
+    "redux-form-yup": "^0.0.5",
     "redux-thunk": "^2.4.1",
     "typescript": "^4.8.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
