@@ -27,6 +27,7 @@ main > h1 {
   top: 8px;
   font-weight: 1;
   font-family: 'Sigmar One', cursive;
+  text-shadow: 2px 4px 16px rgba(41, 41, 41, 1.5);
 }
 
 .Add-article {
@@ -42,6 +43,7 @@ main > h1 {
   position: relative;
   margin: 0.1rem auto;
   font-family: 'Sigmar One', cursive;
+  text-shadow: 2px 4px 16px rgba(41, 41, 41, 1.5);
   font-size: 2rem;
   top: 8px;
 
@@ -70,6 +72,7 @@ main > h1 {
   cursor: pointer;
   outline: none;
   font-family: 'Sigmar One', cursive;
+  text-shadow: 2px 4px 16px rgba(41, 41, 41, 1.5);
 
 }
 
@@ -247,6 +250,7 @@ main > h1 {
 main > h1 {
   text-align: left;
   font-size: 1.8rem;
+
 }
 .Add-article label {
   margin: 0rem auto;
