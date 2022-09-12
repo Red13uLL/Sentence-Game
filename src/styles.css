@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Monofett&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Monofett&family=Sigmar+One&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -8,23 +9,24 @@
 body {
   background-image: url('../src/shared/Images/modern-futuristic-neon-lights.jpg');
   color: white;
-  background-position-x: fixed;
-  background-position-y: fixed;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 4096px;
   width: 100%;
   max-height: 2160px;
   height: 100%;
-  background-attachment: fixed;
-
   font-family: Nunito, sans-serif;
 }
 
 
 
 main > h1 {
+  position: relative;
   text-align: center;
+  top: 8px;
+  font-weight: 1;
+  font-family: 'Sigmar One', cursive;
 }
 
 .Add-article {
@@ -37,7 +39,11 @@ main > h1 {
   border-radius: 10px;
 }
 .Add-article label {
-  margin: 0.4rem auto;
+  position: relative;
+  margin: 0.1rem auto;
+  font-family: 'Sigmar One', cursive;
+  font-size: 2rem;
+  top: 8px;
 
 }
 
@@ -49,6 +55,8 @@ main > h1 {
   border: 1px solid #00b8e6;
   border-radius: 10px;
   outline: none;
+
+  font-family: 'Sigmar One', cursive;
 }
 
 .Add-article button {
@@ -61,6 +69,7 @@ main > h1 {
   border-radius: 20px;
   cursor: pointer;
   outline: none;
+
 }
 
 .Add-article button:hover {
