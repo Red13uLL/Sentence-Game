@@ -58,7 +58,6 @@ export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
         onChange={handleArticleData}
       />
       <button disabled={article === undefined ? true : false}>
-        {' '}
         Make Sentence
       </button>
     </form>
