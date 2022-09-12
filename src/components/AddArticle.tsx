@@ -13,7 +13,6 @@ export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
   };
 
   const [article, setArticle] = React.useState(articles);
-  const [error] = React.useState(['']);
 
   const handleArticleData = (e: React.FormEvent<HTMLInputElement>) => {
     setArticle({
@@ -36,11 +35,6 @@ export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
         id="answer1"
         placeholder="Type your answer here..."
         onChange={handleArticleData}
-        style={{
-          backgroundColor: error.find((item) => item === 'answer1')
-            ? '#d34b4b'
-            : 'white',
-        }}
       />
       <label htmlFor="answer2">What?</label>
       <input
@@ -48,11 +42,6 @@ export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
         id="answer2"
         placeholder="Type your answer here..."
         onChange={handleArticleData}
-        style={{
-          backgroundColor: error.find((item) => item === 'answer2')
-            ? '#d34b4b'
-            : 'white',
-        }}
       />
       <label htmlFor="answer3">When?</label>
       <input
@@ -60,11 +49,6 @@ export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
         id="answer3"
         placeholder="Type your answer here..."
         onChange={handleArticleData}
-        style={{
-          backgroundColor: error.find((item) => item === 'answer3')
-            ? '#d34b4b'
-            : 'white',
-        }}
       />
       <label htmlFor="answer1">Where?</label>
       <input
@@ -72,13 +56,9 @@ export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
         id="answer4"
         placeholder="Type your answer here..."
         onChange={handleArticleData}
-        style={{
-          backgroundColor: error.find((item) => item === 'answer4')
-            ? '#d34b4b'
-            : 'white',
-        }}
       />
       <button disabled={article === undefined ? true : false}>
+        {' '}
         Make Sentence
       </button>
     </form>
